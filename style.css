@@ -1,0 +1,878 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19.03.2017, 23:56:57
+    Author     : sergejkosar
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html { font-size: 100%; }   
+   
+
+body {
+    margin:0;
+    padding:0;  
+    background-color: #f2f2f2;
+    color: #354052;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.wrap {
+    display: flex;
+    width: 100%;  
+}
+
+.sidebar {
+    width: 240px;
+    min-width:240px;
+    min-height: 1010px;
+    background-color: #1D2531;
+    color:#fff;
+    float:left;
+    display:inline;
+    position: relative;
+    z-index: 9999;
+}
+
+.sidebar .close-ico {
+   float:right;
+   margin:10px;
+}
+
+.nav ul {
+   margin-left:-25px; 
+}
+
+.nav li {  
+   margin-bottom: 32px;
+   list-style-type: none;
+}
+
+.nav li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #9094A2;
+    text-decoration: none;
+    margin-left:30px;
+}
+
+.nav li a:hover {
+    color:#0791DA;
+}
+
+.nav li .marker {
+    background-image: url('images/marker2.png');
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: -15px;
+    margin-top: -2px;
+}
+
+.content {
+    background:#EFF3F6;
+    width:100%;
+    float:left;
+    display:inline;
+    overflow: hidden;
+}
+
+.mask {
+    background-color:rgba(0,0,0,.3);
+    height:100%;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    display:none;
+}
+
+.content-header  {
+    width: auto;
+    height: 55px !important;
+    clear:both;
+    margin-top:0px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+    float:none;
+    padding-top: 16px;
+}
+
+.content-header .main-menu {
+    margin:0px -18px;
+    float:left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight:100;
+    color:#888CA5;
+}
+
+.content-header .main-menu a {
+    color: #0094DD;  
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.content-header .right-block {
+   margin-top:-5px;
+   margin-right:5px;
+   width:150px;
+}
+
+.content-header .right-block .button {
+    border: 1px solid #e3e7ec;
+    border-radius: 18px;
+    float: left;
+    height: 37px;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 37px;
+}
+
+.content-header .right-block .button:hover {
+    border:1px solid #0094DD;
+}
+
+.content-header .right-block .button svg:hover {
+   fill: #0094DD;
+}
+
+
+.content-header .right-block .marker {
+   background-image: url("images/marker.png");
+   width: 25px;
+   height: 25px;
+   float: left;
+   margin-top: 5px;
+   margin-left: 5px;
+}
+
+/* Start main menu block */
+
+.main-menu-mobile {
+   margin-right: 25px;
+   display:none;
+}
+
+
+/* End main menu block */
+
+.contant-body {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+    margin:25px;
+    position: relative;
+}
+
+.content-body-menu .datepicker-block {
+    /* float:right; */
+}
+
+.clear {
+    clear:both;
+}
+
+.content-body-menu {
+    width: auto;
+    height:60px;
+    border-bottom:2px solid #DFE3E9;
+    margin-bottom:35px;
+}
+
+/* Style for placeholder */
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size:16px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size:16px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size:16px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size:16px;
+}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+/* ======================== */
+
+.content-body-menu .sub-menu {
+    padding-top:33px;
+}
+
+.content-body-menu .sub-menu a div {
+   height: 28px;
+   float: left;
+   margin-right: 35px;
+}
+
+.content-body-menu .sub-menu a div:hover,
+.content-body-menu .sub-menu a .active {
+   border-bottom:4px solid #0094DD;  
+}
+
+.content-body-menu .active,
+.content-body-menu .sub-menu a:hover {
+    color: #354052 !important;
+}
+
+.content-body-menu a {
+    color: #7c8ca5;
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content-body-menu a:hover{
+    color:#009AE3;
+}
+
+
+.content-body-after-menu {
+  background: #eff3f6 none repeat scroll 0 0;
+  height: auto;
+  min-height: 65px;
+  width: 100%;
+  margin-top:-35px;
+ 
+    
+}
+
+#detailed-report .container {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+#detailed-report .container {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+#detailed-report .container-fluid {
+   padding-left: 0px;
+   padding-right:0px;    
+}
+
+.content-body-top {
+    height: auto;
+    margin:0 auto 0px;
+    background-color: #FFFFFF;
+}
+
+.content-body-top .box1,
+.content-body-top .box2,
+.content-body-top .box3,
+.content-body-top .box4 {
+    width: auto;
+    height: 126px;
+    background-color: #FFFFFF;
+    border: 1px solid #DADFEA;
+    border-radius: 3px;
+    margin-bottom:25px;
+}
+
+.content-body-top .box1 .right img {
+    width: 32px;
+    height:32px;
+}
+
+.content-body-footer {
+    float:none;
+    background:#fff;
+    margin:0px auto;
+}
+
+.box-body {
+    float:none;
+    clear:both;
+    border-bottom: 2px solid #DFE3E9; 
+    height:92px;
+    width:100%;   
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7C8CA5;
+}
+
+.box-body .left {
+   color: #354052; 
+   max-width:195px;
+   font-size: 44px;
+   padding-top: 15px;
+   padding-left: 10px;
+   margin-top: 0px;
+   float:left;
+   height: 35px;
+   float:left;
+}
+
+.box-body .top {
+   float: none;
+   height: 35px;
+   display: block;
+   padding: 10px 10px;
+}
+
+.box-body .right {
+    float:right;
+    width:50px;
+    margin-top: 5px;
+    height: 35px;
+}
+
+.box-footer {
+   height: 25px;
+   width: 100%;
+   float: none;
+   clear: both;
+}
+
+.box-footer a {
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+   line-height: 30px;
+   color: #0094DD;
+   text-decoration: none;
+   margin-left: 15px;
+}
+
+.box-footer p {
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+   line-height: 0px;
+   text-decoration: none;
+   margin-left: 15px;
+   margin-top: 15px;
+}
+
+.content-body-footer .email-block,
+.content-body-footer .phone-block,
+.content-body-footer .sms-block {
+   float:left; 
+   min-width: auto;
+   width: 100%;
+   background-color: #FFFFFF;
+   border: 1px solid #DADFEA;
+   border-radius: 3px;
+   margin-bottom:25px;
+}
+
+.content-body-footer .left svg, 
+.content-body-footer .right svg {
+    margin-top: -2px;
+}
+
+.content-body-footer  .header .left, 
+.content-body-footer .footer .left {
+    float:left;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.content-body-footer  .header .left img {
+    float: left;
+    margin-right: 10px;
+}
+
+.content-body-footer  .header .right {
+    float:right;
+    width:105px;
+}
+
+.content-body-footer  .header .right img {
+   float: left;
+   margin-right: 10px;
+}
+
+.content-body-footer .email-block .header, 
+.content-body-footer .phone-block .header, 
+.content-body-footer .sms-block .header {
+   width:100%;
+   border-bottom: 2px solid #DFE3E9;
+   padding-top: 16px;
+   padding-bottom: 16px;
+   color:#354052 !important;
+}
+
+.content-body-footer .email-block .body,
+.content-body-footer .phone-block .body,
+.content-body-footer .sms-block .body {
+   color: #7c8ca5;
+   font-family: 'Roboto';
+   font-size: 14px;
+   font-weight: 100;
+   min-height:275px;
+}
+
+.content-body-footer ul li {
+    list-style: none;
+}
+
+.content-body-footer .email-block .footer,
+.content-body-footer .phone-block .footer,
+.content-body-footer .sms-block .footer {
+   width:100%;
+   background:#fff;
+   border-top: 1px solid #DFE3E9;
+   margin:0px auto;
+} 
+
+
+.content-body-footer .footer {
+   font-size: 14px;
+   font-weight: bold;
+   color: #5b6779;
+   padding-top: 5px; 
+   height:35px;
+}
+
+
+
+.content-body-footer .footer .left {
+    float:left;
+    width: 200px;
+    margin-left: 10px;
+    color:#7C8CA5;
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.content-body-footer .footer .right {
+    color: #354052;
+    float: right;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-right: 10px;
+    width: 60px;
+}
+
+.content-body-top .wrapper {
+    width:70%;
+    margin: -5px 10px;
+    float:left;
+}
+
+.content-body-top .progress-bar {
+	width: 100%;
+	background-color: #EFF3F6;
+	padding: 0px;
+	border-radius: 5px;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.content-body-top .box-footer p > span {
+    background: #eff3f6 none repeat scroll 0 0;
+    color: #9aa7b9;
+    font-size:14px;
+    padding:2px 5px;
+    border-radius: 3px;
+}
+
+.content-body-top .progress-bar-fill {
+	display: block;
+	height: 12px;
+	background-color: #FFBA2A;
+	border-radius: 5px;
+	transition: width 500ms ease-in-out;
+}
+
+.string {
+    float:none;
+    margin:15px auto;
+    width:95%;
+}
+
+.string.emty {
+    height: 20px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.string .left {
+    float:left;
+    max-width:220px;
+}
+
+.string .right {
+    float:right;
+    color:#354052;
+}
+
+.string .right span {
+    background: #eff3f6 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #7C8CA5;
+    font-size: 14px;
+    margin-bottom: 18px !important;
+    padding: 2px 5px;
+}
+
+.string .footer .wrapper {
+    float: left;
+    margin: 5px 0;
+    width:100%;
+}
+
+.string .footer .progress-bar {
+    width: 100%;
+    background-color: #EFF3F6;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.string .footer {
+    background: #eff3f6 none repeat scroll 0 0;
+    color: #9aa7b9;
+    font-size:14px;
+    border-top: medium none transparent !important;
+}
+
+.string .footer .progress-bar-fill {
+	display: block;
+	height: 12px;
+	background-color: #FFBA2A;
+	border-radius: 5px;
+	transition: width 500ms ease-in-out;
+}
+
+tbody th {
+    font-weight: 100;
+}
+
+.table > tbody > tr > td, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > td, 
+.table > tfoot > tr > th,
+.table > thead > tr > td, 
+.table > thead > tr > th {
+    font-weight: 100;
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+    text-align: center;
+}
+
+.table > thead > tr > td, 
+.table > thead > tr > th {
+    color:#7C8CA5; 
+}
+
+.table > tbody > tr > td a, 
+.table > tbody > tr > th a, 
+.table > tfoot > tr > td a, 
+.table > tfoot > tr > th a,
+.table > thead > tr > td a, 
+.table > thead > tr > th a {
+    color:#0094DD;
+}
+
+table#table-detailed-report tr:hover {
+    background: #F7FBFE;
+}
+
+svg {
+    float: left;
+    margin-right: 5px;
+}
+
+/* table start */
+
+#calendar-table table {
+    width:100%;
+    font-size: 1em;
+    border-collapse: unset;
+    border-spacing: 0;
+    margin-bottom: 25px;
+
+}
+
+#calendar-table th {	
+    color: #7c8ca5;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    font-weight: 100 !important;
+    text-align: center;
+}
+
+#calendar-table .appoi {
+   background-color: #eff3f6;
+   border: 1px solid #dfe3e9;
+   font-size: 14px;
+   min-height: 30px;
+   margin: 0px 0px 0px -4px;
+   padding: 5px;
+   color:#354052;
+   height:auto;
+}
+
+#calendar-table thead tr {
+    height: 30px;
+    vertical-align: inherit;
+}
+
+#calendar-table tr {
+   height: 210px;
+   padding: 0;
+   vertical-align: top;
+}
+
+#calendar-table td.past {
+  background: #F9FAFB none repeat scroll 0 0;
+  color: #7C8CA5;
+}
+#calendar-table td.future {
+  background: #ECF0F3 none repeat scroll 0 0;
+  color: #7C8CA5;
+}
+
+#calendar-table td {
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    max-width:210px;
+    width:210px;
+    padding: 0 0 0 4px;
+    vertical-align: top;
+    direction: ltr;
+    text-align: left;
+    border-width: 1px;
+    color:#7C8CA5;
+}
+
+#calendar-table .sms-box,
+#calendar-table .emails-box,
+#calendar-table .calls-box {
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    height: 25px;
+    padding: 4px 25px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-seri;
+    font-size: 12px;
+    max-width: 100px;
+}
+
+
+#calendar-table .stat-day a {
+   text-decoration: none;
+}
+
+#calendar-table .sms-box {
+   background: #1CBC42 none repeat scroll 0 0; 
+}
+
+#calendar-table .sms-box:hover {
+   background: #00991f none repeat scroll 0 0;
+}
+
+#calendar-table .emails-box {
+    background: #FFBA2A none repeat scroll 0 0; 
+}
+#calendar-table .emails-box:hover {
+    background:  #eaa515 none repeat scroll 0 0;
+}
+
+#calendar-table .calls-box {
+  background: #0692DA;
+}
+#calendar-table .calls-box:hover {
+  background: #0074bc none repeat scroll 0 0;
+}
+
+#calendar-table .money-box {
+   color: #354052;
+   margin-left:-10px;
+}
+
+#calendar-table .money-box::before {
+   // content: url("images/bugs-pic.png");
+   // float: left;
+   // left: 0;
+   // margin-left: -10px;
+   // position: unset;
+}
+
+
+#calendar-table ul.stat-day {
+    float:none;
+    margin-top:5px;
+    margin-right:5px;
+    height:163px;
+    clear:both;
+    margin-top:-15px;
+}
+
+#calendar-table .stat-day > li {
+   list-style: outside none none;
+   margin-bottom: 4px;
+
+}
+
+#calendar-table svg {
+   margin-right: 0;   
+}
+/*  table end  */
+
+
+
+@media (min-width: 1325px) and (max-width: 1500px) {
+   
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, 
+    .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, 
+    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, 
+    .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, 
+    .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, 
+    .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, 
+    .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, 
+    .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1325px) {
+        
+    .content-body-top .col-md-3 {
+       width: 50% !important;
+    }
+    
+    .content-body-footer .col-md-4 {
+        width:100%
+    }
+
+}
+
+@media (min-width: 1100px) and (max-width: 1510px) {
+            
+    #calendar-table table {
+        width: 100%;
+    }
+    
+    #calendar-table td.past,
+    #calendar-table td.future,
+    #calendar-table td {
+       width: 150px !important; 
+    }
+    
+    #calendar-table tr {
+        height:150px;
+    }
+    
+    #calendar-table ul.stat-day {
+        height: 105px;
+    }
+
+}
+
+@media screen and (max-width: 1350px) {
+
+        #calendar-table .sms-box, 
+        #calendar-table .emails-box, 
+        #calendar-table .calls-box {          
+           padding: 4px 2px;
+        }
+        
+        #calendar-table .money-box {
+            margin-left: -20px;
+        }
+    
+        #calendar-table td.past, 
+        #calendar-table td.future, 
+        #calendar-table td {
+            width: 14.28% !important;
+        }
+        
+        #calendar-table .appoi {
+            font-size: 11px;
+            height: auto;
+        }
+        
+        #calendar-table .stat-day > li {
+            margin-left: 0;
+        }
+    
+}
+
+
+@media (min-width: 500px) and (max-width: 1100px) {
+    
+    #calendar-table .stat-day > li {
+       margin-left: 0px;    
+    }
+      
+    #calendar-table ul.stat-day {
+        height:105px;
+    }
+    
+    #calendar-table tr {
+        height:150px;
+    }
+    
+    #calendar-table .appoi {
+        font-size: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    .main-menu-mobile {
+        display: initial !important;
+    } 
+    
+    .sidebar {
+        display:none;
+        position:fixed;
+    } 
+    
+}
+
+@media screen and (max-width: 985px) {
+       
+    .col-xs-3 {
+       width: 35% !important;  
+    }
+    
+    .col-sm-9 {
+        width: 65% !important;
+    }
+        
+}
+
+
+@media (min-width: 980px) and (max-width: 1350px) {
+
+/* Style for IE 9 */
+:root .style {
+  .content { width: 1108px !important; }
+}
+
+/* Style for IE 10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .content {  width: 1108px !important; }
+}
+
+}
+
+

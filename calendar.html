@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>EyeConX - Recall - Total Results</title>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>  
+        
+        
+        <link href="jquery.webui-popover.min.css" rel="stylesheet" type="text/css" />
+        <script src="js/jquery.webui-popover.min.js" type="text/javascript"></script>
+        <script src="js/placeholder.js" type="text/javascript"></script>
+        <script src="js/main-functions.js" type="text/javascript"></script>
+        
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/calendar.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" media="screen">
+        <link href="normalize.css" rel="stylesheet" media="screen">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="calendar-style.css" rel="stylesheet">
+        <link href="style-for-forms.css" rel="stylesheet">
+        
+        <script>
+            $(document).ready(function() {
+                 $("#datepickerFrom").datepicker(); 
+                 $("#datepickerTo").datepicker();             
+            });
+            jQuery('.mask').hide();
+        </script>
+        
+        <!--[if IE]>
+        <style type="text/css">
+
+            .content { width: 100% !important; }
+            .sidebar { position: fixed !important; }
+            .mask { display: block; }
+
+        </style>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="wrap">
+            
+            <div class="sidebar">
+                <a href="/"><img src="images/logo-eyeconX.png" alt="eyeconX" /></a>
+                <svg fill="#9094a2" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" onclick="hide_sidebar()" class="close-ico">
+    		    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+    		    <path d="M0 0h24v24H0z" fill="none"/>
+		</svg> 
+               <nav class="nav">
+                <ul>
+                    <li><div class="marker"></div><a href="#">Dashboard</a></li>
+                    <li><div class="marker"></div><a href="#">Patient Files</a></li>
+                    <li><div class="marker"></div><a href="#">Diagnosis</a></li>
+                    <li><div class="marker"></div><a href="#">Email/SMS</a></li>
+                    <li><div class="marker"></div><a href="#">Reminders</a></li>
+                    <li><div class="marker"></div><a href="#">Appointments</a></li>
+                    <li><div class="marker"></div><a href="#">Articles</a></li>
+                    <li><div class="marker"></div><a href="#">Surveys</a></li>
+                    <li><div class="marker"></div><a href="#">Clinic</a></li>
+                    <li><div class="marker"></div><a href="#">Recall</a></li>
+                </ul>
+                </nav>
+            </div>
+            
+            <div class="content">
+                
+                <div class="content-header">
+                    
+                    <div class="container-fluid">    
+                        
+                            <div class="row-fluid">
+                        
+                                <div class="span9 col-xs-9 col-md-10 col-sm-0"> 
+                                    
+                                    <svg class="main-menu-mobile" fill="#B7C0CD" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"  onclick="show_sidebar()"  >
+                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                                    </svg>
+                    
+                                    <div class="main-menu"> <a href="#">Dashboard</a> / <a href="#">Reminders</a> / &nbsp;&nbsp;Recall </div>                                                                             
+                                
+                                </div>
+                                
+                                <div class="span3 col-xs-2 col-md-2 col-sm-3">
+                  
+                                       <div class="right-block">
+                      
+                                            <a href="#"><div class="bell button"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                                    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+                                                                                    <desc>Created with Sketch.</desc>
+                                                                                    <defs>
+                                                                                        <path d="M12,22 C13.1,22 14,21.1 14,20 L10,20 C10,21.1 10.9,22 12,22 Z M18,16 L18,11 C18,7.93 16.37,5.36 13.5,4.68 L13.5,4 C13.5,3.17 12.83,2.5 12,2.5 C11.17,2.5 10.5,3.17 10.5,4 L10.5,4.68 C7.64,5.36 6,7.92 6,11 L6,16 L4,18 L4,19 L20,19 L20,18 L18,16 Z M16,17 L8,17 L8,11 C8,8.52 9.51,6.5 12,6.5 C14.49,6.5 16,8.52 16,11 L16,17 Z" id="path-1"></path>
+                                                                                    </defs>
+                                                                                    <g id="ic_notifications_none_black_24px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                                        <g id="Group">
+                                                                                            <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                                                                                            <mask id="mask-2" fill="white">
+                                                                                                <use xlink:href="#path-1"></use>
+                                                                                            </mask>
+                                                                                            <g id="Shape"></g>
+                                                                                            <g id="color-/-icons-/-light_theme" mask="url(#mask-2)" fill="#B7C0CD">
+                                                                                                <rect id="Rectangle-Copy-9" x="0" y="0" width="24" height="24"></rect>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </svg>
+                                                        </div></a>
+                                            <a href="#"><div class="user button"><svg fill="#B7C0CD" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                                                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                                                                </svg>
+                                                        </div></a>
+                                            <a href="#" data-toggle="dropdown"><div class="marker"></div></a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="kebab-menu2">
+                                                    <li><a href="#">Profile</a></li>   
+                                                    <li><a href="#">Logout</a></li>                                                                                          
+                                            </ul>
+                                            <div class="clear"></div>
+                           
+                                        </div>
+                                </div>                                 
+                                
+                            </div>
+                    
+                    </div>                  
+                 
+                </div>
+               
+                <div class="contant-body">
+                    
+                    <div class="content-body-menu">
+                        
+                        <div class="container-fluid">    
+                        
+                            <div class="row-fluid">
+                        
+                                <div class="span9 col-xs-9 col-md-9 col-sm-9">
+                        
+                                     <div class="sub-menu"><a href="/index.html"><div>Total Results</div></a> <a href="/detailed-report.html"><div>Detailed Report</div></a> <a href="/calendar.html" class="active" ><div class="active" >Calendar</div></a></div>                                                          
+                                     
+                                </div>
+                        
+                                <div class="span3 col-xs-3 col-md-3 col-sm-3">
+                        
+                                    <div class="datepicker-block">
+                                        
+                                        <form class="form-horizontal" > 
+                                            
+                                            <div class="dropdown1">
+                                               
+                                                <input class="form-control dropdown-toggle" type="text" data-toggle="dropdown" placeholder="March, 2017" id="date" readonly>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">This Month</a></li>
+                                                    <li><a href="#">Last Month</a></li>
+                                                    <li><a href="#">Last 3 Months</a></li>
+                                                    <li><a href="#">All time</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><div class="datepicker-block">
+                                                            <form class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label id='datepikcher-label' for="exampleInputEmail1">From </label> <label id='datepikcher-label' for="exampleInputEmail1">To </label>
+                                                                    <input id="datepickerFrom" placeholder="MM/DD/YYY"  /> <input id="datepickerTo" placeholder="MM/DD/YYY"  /><button class="btn btn-small" type="button">Done</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>                                                       
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                        
+                                        </form>
+                                    
+                                    </div>
+                        
+                                </div>    
+                        
+                            </div>
+                        
+                        </div>
+                        
+                    </div>                               
+                    
+                    <div class="content-body-top">
+                                                                                                                                                                                                                                                                                                                           
+                                    <div id="calendar-table" class="table-responsive" style="max-width: 100%; overflow: auto;">
+                                   
+                                       <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Sunday</th> 
+                                                <th>Monday</th>
+                                                <th>Tuesday</th>
+                                                <th>Wednesday</th>
+                                                <th>Thursday</th>
+                                                <th>Friday</th>
+                                                <th>Saturday</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="past">FEB 27</td>
+                                                <td class="past">FEB 28</td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4
+                                                    <ul class="stat-day">
+                                                        <li><a href="#" data-placement="left" ><div class="sms-box"> 5 SMS</div></a></li>
+                                                        <li><a href="#" data-placement="left"><div class="emails-box"> 6 Emails</div></a></li>
+                                                        <li><a href="#" data-placement="left"><div class="calls-box"> 20 Calls</div></a></li>
+                                                        <li><div class="money-box"><svg fill="#1CBC42" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
+                                                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                                                </svg>$2,250</div></li>
+                                                   </ul>
+                                                   <div class="clear"></div>
+                                                   <div class="appoi">4 future appointments</div>
+                                                </td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>7</td>
+                                                <td>8
+                                                    <ul class="stat-day">
+                                                        <li><a href="#"><div class="sms-box"> 7 SMS</div></a></li>
+                                                        <li><div class="money-box"><svg fill="#1CBC42" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
+                                                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                                                </svg>$600</div></li>
+                                                   </ul>
+                                                   <div class="appoi">4 future appointments</div>
+                                                </td>
+                                                <td>9
+                                                    <ul class="stat-day">
+                                                        <li><a href="#"><div class="emails-box"> 3 Emails</div></a></li>
+                                                        <li><a href="#"><div class="calls-box"> 20 Calls</div></a></li>
+                                                        <li><div class="money-box"><svg fill="#1CBC42" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
+                                                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                                                </svg>$1,990</div></li>
+                                                   </ul>
+                                                   <div class="appoi">3 future appointments</div>
+                                                </td>
+                                                <td>10</td>
+                                                <td>11</td>
+                                                <td>12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>13</td>
+                                                <td>14</td>
+                                                <td>15</td>
+                                                <td>16</td>
+                                                <td>17</td>
+                                                <td>18</td>
+                                                <td>19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20</td>
+                                                <td>21
+                                                    <ul class="stat-day">
+                                                        <li><a href="#"><div class="sms-box"> 4 SMS</div></a></li>
+                                                        <li><a href="#"><div class="emails-box"> 8 Emails</div></a></li>
+                                                        <li><a href="#"><div class="calls-box"> 6 Calls</div></a></li>
+                                                        <li><div class="money-box"><svg fill="#1CBC42" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
+                                                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                                                </svg>$2,250</div></li>
+                                                   </ul>
+                                                   <div class="appoi">5 future appointments</div>
+                                                </td>
+                                                <td>22
+                                                    <ul class="stat-day">
+                                                        <li><a href="#"><div class="calls-box">3 Calls</div></a></li>
+                                                        <li><div class="money-box"><svg fill="#1CBC42" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
+                                                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                                                </svg>$1,200</div></li>
+                                                   </ul>
+                                                   <div class="appoi">8 future appointments</div>
+                                                </td>
+                                                <td>23</td>
+                                                <td>24</td>
+                                                <td>25</td>
+                                                <td>26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>27</td>
+                                                <td>28</td>
+                                                <td>29</td>
+                                                <td>30</td>
+                                                <td>31</td>
+                                                <td class="future">APR 1</td>
+                                                <td class="future">APR 2</td>
+                                            </tr>                                          
+                                            </tbody>
+                                       </table>
+                                       
+                                   </div>
+                                    
+                                    <!-- table end -->
+                                                                                                                                                                                                                                   
+                    </div>
+                                                         
+                </div>
+                
+                <div class="mask" onclick="hide_sidebar()"></div> 
+                </div>        
+                               
+                </div>
+                <script src="js/placeholder.js" type="text/javascript"></script> 
+</body>
+</html>

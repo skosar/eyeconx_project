@@ -1,0 +1,419 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04.04.2017, 1:07:00
+    Author     : sergejkosar
+*/
+
+
+
+/* ========= Add Font ============ = */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(materiall-font/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(materiall-font/MaterialIcons-Regular.woff2) format('woff2'),
+       url(materiall-font/MaterialIcons-Regular.woff) format('woff'),
+       url(materiall-font/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.btn {
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    margin-right: 5px;
+    padding: 5px 30px;
+    text-align: center;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* ========= Start Calendar Block =========== */
+
+#datepikcher-label {   
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 0.3;
+    width: 100px;
+    color:#7C8CA5;
+}
+
+.dropdown1 {
+    margin-top: 12px;
+}
+
+.dropdown3 {
+    float:left;
+    margin-right:15px;
+}
+
+.dropdown1 .dropdown-menu {
+   width: 240px !important;
+   margin-left:15px;
+}
+
+
+
+.dropdown2 {
+   margin: -5px 25px;
+   width: 25px;
+}
+
+.dropdown2:hover {
+    border-radius: 5px;
+}
+
+
+.dropdown2 .dropdown-menu {
+     width: 100px !important;
+     min-width: 120px !important;
+}
+
+
+
+#kebab-menu.dropdown-menu {
+    width:100px;
+}
+
+#kebab-menu2.dropdown-menu {
+    width: 100px; 
+    margin-left: 50px;
+}
+
+.dropdownMenu2 {
+    width:24px;
+    height:24px;
+    background:red;
+}
+
+.kebab-menu {
+   width:25px;
+   height:25px;
+}
+
+.dropdown3 .dropdown-menu {
+    margin-left:15px; 
+    width:180px;
+}
+
+.dropdown3 span {
+    color: #7c8ba4;
+    font-size: 13px;
+    margin-left: 12px;
+}
+
+.dropdown3 .dropdown-menu button {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #0094DD !important;
+    color: #0094DD;
+    margin: 5px 10px;
+    width: 160px;
+}
+
+
+.dropdown-menu li a {
+    margin-left: 0px;
+    text-align: left !important;
+}
+
+.dropdown-menu > li > a {
+   color: #354052;
+   display: table-cell !important;
+   font-size: 14px;
+   padding: 3px 15px 0 !important;
+   text-transform: none;
+}
+
+.dropdown-menu > li > a:hover {
+    background: transparent !important;
+}
+
+.dropdown-menu > li {
+    margin-bottom: 10px;
+}
+
+.content-body-menu .dropdown a {
+    color: #7c8ca5;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.dropdown1 .form-control {
+    width:240px;
+}
+
+.datepicker-block .form-group {
+    width: 210px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.content-body-menu .datepicker-block #datepickerFrom,
+.content-body-menu .datepicker-block #datepickerTo {
+    border: 1px solid #b7c0cc;
+    border-radius: 4px;
+    height: 35px;
+    margin: 5px 0 15px;
+    padding-left: 5px;
+    width: 100px;
+}
+
+.content-body-menu .datepicker-block button {
+   background: #fff;
+   border:1px solid #DFE3E9;
+   float:right;
+}
+
+.input-group-addon {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 2px 12px;
+    text-align: center;
+}
+
+/* ========= End Calendar Block =========== */
+
+.dropdown1 .form-group {
+    margin-top:15px;  
+}
+
+.form-inline.filter {
+    margin-top:15px;
+}
+
+#ContactMethod,
+#SelectMethod {
+   height: 35px;
+   margin: 5px 10px;
+   width: 160px;
+   float:none;
+ }
+ 
+ 
+ input#ContactMethod,
+ input#SelectMethod {
+    background-image: url("images/marker.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+
+ }
+ 
+ input#date { 
+    background-image: url("images/icons/date_range.svg"), url("images/icons/arrow_drop_down.svg");
+    background-position: 5px 5px, right center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    font-family: "Roboto",sans-serif;
+    font-size: 13px;
+    height: 35px;
+    outline: medium none;
+    padding-left: 35px; 
+    width:240px; 
+ }
+ 
+input#date[placeholder] { color:#354052; }
+input#date::-moz-placeholder { color:#354052; }
+input#date:-moz-placeholder { color:#354052; }
+input:-ms-input-placeholder {color:#354052;}
+input#date::-webkit-input-placeholder {color:#354052; font-size:13px; opacity: 1; font-family: "Roboto",sans-serif;}
+
+input#filter {
+    //background-image: url("images/filter-ico.png"), url("images/marker.png");
+    background-image: url("images/icons/filter_list.svg"), url("images/icons/arrow_drop_down.svg");
+    background-position: 4px center, right center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    font-family: "Roboto",sans-serif;
+    font-size: 13px;
+    height: 35px;
+    outline: medium none;
+    padding-left: 35px; 
+    width:180px;
+}
+
+input#filter[placeholder] { color:#354052; }
+input#filter::-moz-placeholder { color:#354052; }
+input#filter:-moz-placeholder { color:#354052; }
+input:-ms-input-placeholder {color:#354052;}
+input#filter::-webkit-input-placeholder {color:#354052; font-size:13px; opacity: 1; font-family: "Roboto",sans-serif;}
+
+input#search-text-input {
+    background-image: url("images/icons/search.svg");
+    //background-image: url("images/search-ico.png");
+    background-position: 4px center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    font-family: "Roboto",sans-serif;
+    font-size: 13px;
+    height: 35px;
+    outline: medium none;
+    padding-left: 35px;
+    width:375px;
+}
+
+input#date::after {
+    -moz-osx-font-smoothing: grayscale;
+    content: "";
+    float: right;
+    font-family: dashicons;
+    margin-right: 2px;
+    margin-top: -35px;
+    transform: rotate(0deg);
+    vertical-align: top;
+}
+
+input[placeholder]          {font-size:13px; color:#B7C0CD; opacity: 1; font-family: "Roboto",sans-serif;}
+input::-moz-placeholder     {font-size:13px; color:#B7C0CD; opacity: 1; font-family: "Roboto",sans-serif;} 
+input:-moz-placeholder      {font-size:13px; color:#B7C0CD; opacity: 1; font-family: "Roboto",sans-serif;} 
+input:-ms-input-placeholder {font-size:13px; color:#B7C0CD; opacity: 1; font-family: "Roboto",sans-serif;}  
+input::-webkit-input-placeholder {font-size:13px; color:#B7C0CD; opacity: 1; font-family: "Roboto",sans-serif;}  
+ 
+
+input#filter::-moz-placeholder,
+input#filter:-moz-placeholder,
+input#filter:-ms-input-placeholder,
+input[placeholder] {
+  color:#B7C0CD !important;
+  font-weight: 100 !important;
+  opacity: 1;
+  font-family: "Roboto",sans-serif;
+}
+
+.form-control[disabled], 
+.form-control[readonly], 
+fieldset[disabled] .form-control {
+    background-color: #fff;
+    opacity: 1;
+}
+
+@media (min-width: 100px) and (max-width: 1630px) {
+       
+    .dropdown2 {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1050px) and (max-width: 1325px) {
+        
+    input#date {
+        max-width: 220px !important;
+    }
+    
+    .dropdown1 .dropdown-menu {
+       max-width: 220px !important; 
+    }
+    
+    .content-body-menu .datepicker-block #datepickerFrom, 
+    .content-body-menu .datepicker-block #datepickerTo {
+        width:70px;
+        font-size:12px;
+    }
+    
+    #datepikcher-label {
+       width: 70px;
+    }
+    
+    .content-body-menu .datepicker-block button {
+        float:left;
+        padding:5px 20px;
+    }
+    
+}
+
+@media (min-width: 300px) and (max-width: 1050px) {
+    
+    input#date {
+        max-width: 220px !important;
+    }
+    
+    .dropdown1 .dropdown-menu {
+       max-width: 220px !important; 
+    }
+
+    .datepicker-block .form-group {
+       margin-left: 7px;
+       margin-right: 5px;
+       width: 210px;
+    }
+    
+    input[placeholder]          {font-size:12px; color:#B7C0CD; font-family: "Roboto",sans-serif;}
+    input::-moz-placeholder     {font-size:12px; color:#B7C0CD; font-family: "Roboto",sans-serif;} 
+    input:-moz-placeholder      {font-size:12px; color:#B7C0CD; font-family: "Roboto",sans-serif;} 
+    input:-ms-input-placeholder {font-size:12px; color:#B7C0CD; font-family: "Roboto",sans-serif;}  
+       
+    .dropdown3 {
+       float: none;
+       margin: 0 0 15px;
+    }
+    
+    .dropdown3 .dropdown-menu {
+        margin-top: -65px;
+    }
+    
+    input#search-text-input {
+       margin-bottom: 15px;
+    }
+
+}
+
+
+
+@media (min-width: 300px) and (max-width: 680px) {
+    
+    .dropdown3 {
+        display:none;
+    }
+
+}

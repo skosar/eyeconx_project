@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>EyeConX - Recall - Total Results</title>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>  
+        
+        
+        <link href="jquery.webui-popover.min.css" rel="stylesheet" type="text/css" />
+        <script src="js/jquery.webui-popover.min.js" type="text/javascript"></script>
+
+        
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/calendar.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" media="screen">
+        <link href="normalize.css" rel="stylesheet" media="screen">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="calendar-style.css" rel="stylesheet">
+        <link href="style-for-forms.css" rel="stylesheet">
+        
+        <script>
+            $(document).ready(function() {
+                 $("#datepickerFrom").datepicker(); 
+                 $("#datepickerTo").datepicker();             
+            });
+        </script>
+        
+  
+    </head>
+    <body>
+        <div class="wrap">
+            
+            <div class="sidebar">
+                <a href="/"><img src="images/logo-eyeconX.png" alt="eyeconX" /></a>
+                <a href="/" class="close-ico"><img src="images/close-img.png"/></a>
+                <ul>
+                    <li><div class="marker"></div><a href="#">Dashboard</a></li>
+                    <li><div class="marker"></div><a href="#">Patient Files</a></li>
+                    <li><div class="marker"></div><a href="#">Diagnosis</a></li>
+                    <li><div class="marker"></div><a href="#">Email/SMS</a></li>
+                    <li><div class="marker"></div><a href="#">Reminders</a></li>
+                    <li><div class="marker"></div><a href="#">Appointments</a></li>
+                    <li><div class="marker"></div><a href="#">Articles</a></li>
+                    <li><div class="marker"></div><a href="#">Surveys</a></li>
+                    <li><div class="marker"></div><a href="#">Clinic</a></li>
+                    <li><div class="marker"></div><a href="#">Recall</a></li>
+                </ul>
+                
+            </div>
+            
+            <div class="content">
+                
+                <div class="content-header">
+                    
+                    <div class="container-fluid">    
+                        
+                            <div class="row-fluid">
+                        
+                                <div class="span6 col-xs-6 col-md-6 col-sm-6">
+                    
+                                        <div class="main-menu"> <a href="#">Dashboard</a> / <a href="#">Reminders</a> / &nbsp;&nbsp;Recall </div>
+                                
+                                </div>
+                                
+                                <div class="span6 col-xs-6 col-md-6 col-sm-6">
+                  
+                                       <div class="right-block">
+                      
+                                            <a href="#"><div class="bell button"><svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                                    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+                                                                                    <desc>Created with Sketch.</desc>
+                                                                                    <defs>
+                                                                                        <path d="M12,22 C13.1,22 14,21.1 14,20 L10,20 C10,21.1 10.9,22 12,22 Z M18,16 L18,11 C18,7.93 16.37,5.36 13.5,4.68 L13.5,4 C13.5,3.17 12.83,2.5 12,2.5 C11.17,2.5 10.5,3.17 10.5,4 L10.5,4.68 C7.64,5.36 6,7.92 6,11 L6,16 L4,18 L4,19 L20,19 L20,18 L18,16 Z M16,17 L8,17 L8,11 C8,8.52 9.51,6.5 12,6.5 C14.49,6.5 16,8.52 16,11 L16,17 Z" id="path-1"></path>
+                                                                                    </defs>
+                                                                                    <g id="ic_notifications_none_black_24px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                                        <g id="Group">
+                                                                                            <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                                                                                            <mask id="mask-2" fill="white">
+                                                                                                <use xlink:href="#path-1"></use>
+                                                                                            </mask>
+                                                                                            <g id="Shape"></g>
+                                                                                            <g id="color-/-icons-/-light_theme" mask="url(#mask-2)" fill="#B7C0CD">
+                                                                                                <rect id="Rectangle-Copy-9" x="0" y="0" width="24" height="24"></rect>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </svg>
+                                                        </div></a>
+                                            <a href="#"><div class="user button"><svg fill="#B7C0CD" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                                                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                                                                </svg>
+                                                        </div></a>
+                                            <a href="#"><div class="marker"></div></a>
+                                            <div class="clear"></div>
+                           
+                                        </div>
+                                </div>
+                                
+                            </div>
+                    
+                    </div>                  
+                 
+                </div>
+               
+                <div class="contant-body">
+                    
+                    <div class="content-body-menu">
+                        
+                        <div class="container-fluid">    
+                        
+                            <div class="row-fluid">
+                        
+                                <div class="span9 col-xs-12 col-md-9 col-sm-12">
+                        
+                                     <div class="sub-menu"><a href="/index.html"><div>Total Results</div></a> <a href="/detailed-report.html"><div>Detailed Report</div></a> <a href="/calendar.html" class="active" ><div class="active" >Calendar</div></a></div>
+                        
+                                </div>
+                        
+                                <div class="span2 col-xs-12 col-md-2 col-sm-12">
+                        
+                                    <div class="datepicker-block">
+                                        
+                                        <form class="form-horizontal" > 
+                                            
+                                            <div class="dropdown1">
+                                               
+                                                <input class="form-control dropdown-toggle" type="text" data-toggle="dropdown" placeholder="March, 2017" id="date" readonly>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">This Month</a></li>
+                                                    <li><a href="#">Last Month</a></li>
+                                                    <li><a href="#">Last 3 Months</a></li>
+                                                    <li><a href="#">All time</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><div class="datepicker-block">
+                                                            <form class="form-inline">
+                                                                <div class="form-group">
+                                                                    <label id='datepikcher-label' for="exampleInputEmail1">From </label> <label id='datepikcher-label' for="exampleInputEmail1">To </label>
+                                                                    <input id="datepickerFrom" placeholder="MM/DD/YYY"  /> <input id="datepickerTo" placeholder="MM/DD/YYY"  /><button class="btn btn-small" type="button">Done</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>                                                       
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                        
+                                        </form>
+                                    
+                                    </div>
+                        
+                                </div>    
+                        
+                            </div>
+                        
+                        </div>
+                        
+                    </div>                               
+                    
+                    <div class="content-body-top">
+                                  
+                        <div class="container-fluid">    
+                           
+                            <div class="row-fluid"> 
+                                                                                    
+                                <div class="container">
+                               
+                                   <div id="calendar" class=""> </div>
+                                   <br />                                  
+                               </div>
+                                
+                           </div>  
+                            
+                        </div>
+                        
+                    </div>
+                    
+                                      
+                </div>
+                    
+                </div>
+                               
+                </div>
+       
+</body>
+</html>
